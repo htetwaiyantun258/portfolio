@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wai Yan Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Add this in your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Custom Navbar Hover Effect */
+    nav a {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      background-color: #6366F1;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+    nav a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    
+  </style>
+</head>
+<body class="bg-[#F5F5F5] text-[#111111]" id="body">
+
+  <div class="container">
+    <div class="container-fluid">
+
+      <!-- Header -->
+      <header class="bg-[#000000] text-white p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+          <h1 class="text-xl font-bold">My Portfolio</h1>
+          <nav class="space-x-4">
+            <a href="#projects" class="hover:text-[#6366F1]">Projects</a>
+            <a href="about.html" class="hover:text-[#6366F1]">About</a>
+            <a href="#skills" class="hover:text-[#6366F1]">Skills</a>
+            <a href="#testimonials" class="hover:text-[#6366F1]">Testimonials</a>
+            <a href="blog.html" class="hover:text-[#6366F1]">Blog</a>
+            <a href="#contact" class="hover:text-[#6366F1]">Contact</a>
+            <!-- Dark Mode Toggle Button -->
+            <!-- <button id="theme-toggle" class="bg-white text-indigo-500 px-4 py-2 rounded">🌙</button> -->
+            
+          </nav>
+        </div>
+      </header>
+      <!-- Hero Section -->
+      <section class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-4 py-20">
+        <div class="text-center md:text-left md:w-1/2 space-y-6">
+          <h2 class="text-4xl font-bold">Hi, I'm Wai Yan</h2>
+          <p class="text-lg">A passionate developer learning JavaScript, PHP, and React.</p>
+          <a href="#projects" class="inline-block bg-[#6366F1] text-white py-2 px-6 rounded-full hover:bg-indigo-700 transition">
+            View My Work
+          </a>
+        </div>
+        <div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+          <img src="myphoto.jpg" alt="Wai Yan's photo" class="rounded-2xl w-72 h-auto shadow-lg object-cover" />
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="bg-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#111111] mb-6">My Projects</h2>
+          <p class="text-[#555555] mb-12 max-w-2xl mx-auto">Here are some of the projects I’ve worked on recently. Click on them to learn more.</p>
+          <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-[#F5F5F5] p-6 rounded-xl shadow hover:shadow-lg transition">
+              <a href="https://github.com/htetwaiyantun258/lara_blog">
+              <img src="project1.jpg" alt="Project 1" class="rounded-lg mb-4 w-full h-48 object-cover">
+              </a>  
+              <h3 class="text-xl font-semibold text-[#111111]">Blog Project</h3>
+              <p class="text-sm text-[#333333] mt-2">Description about your project here. What did you build? What tech did you use?</p>
+            </div>
+            <div class="bg-[#F5F5F5] p-6 rounded-xl shadow hover:shadow-lg transition">
+                <a href="https://github.com/htetwaiyantun258/shopping">
+              <img src="project2.jpg" alt="Project 2" class="rounded-lg mb-4 w-full h-48 object-cover">
+              </a>
+              <h3 class="text-xl font-semibold text-[#111111]">Ecommerce Website Project</h3>
+              <p class="text-sm text-[#333333] mt-2">Description about your project here. Add key features or challenges you solved.</p>
+            </div>
+            <div class="bg-[#F5F5F5] p-6 rounded-xl shadow hover:shadow-lg transition">
+                <a href="https://github.com/htetwaiyantun258/MVC">
+              <img src="project3.jpg" alt="Project 3" class="rounded-lg mb-4 w-full h-48 object-cover">
+                </a>
+              <h3 class="text-xl font-semibold text-[#111111]">MVC Project</h3>
+              <p class="text-sm text-[#333333] mt-2">Brief details of the project. Mention languages or frameworks used.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="bg-white py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8">My Skills</h2>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-sm text-[#333]">
+      
+            <div class="p-4 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+              <i class="fab fa-html5 text-orange-500 text-2xl mb-2"></i>
+              HTML & CSS
+            </div>
+      
+            <div class="p-4 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+              <i class="fab fa-js text-yellow-500 text-2xl mb-2"></i>
+              JavaScript
+            </div>
+      
+            <div class="p-4 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+              <i class="fab fa-react text-blue-500 text-2xl mb-2"></i>
+              React
+            </div>
+      
+            <div class="p-4 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+              <i class="fab fa-php text-indigo-500 text-2xl mb-2"></i>
+              PHP
+            </div>
+      
+            <div class="p-4 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+              <i class="fab fa-laravel text-red-500 text-2xl mb-2"></i>
+              Laravel
+            </div>
+      
+            <div class="p-4 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+              <i class="fas fa-wind text-cyan-500 text-2xl mb-2"></i>
+              Tailwind CSS
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="bg-[#f5f5f5] py-16 px-4 text-center">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8">What Others Say</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow">
+              <p class="italic">"Wai Yan is a quick learner and a hardworking teammate. His dedication to self-improvement is inspiring."</p>
+              <p class="mt-4 font-semibold">— Aung Ko Ko, Mentor</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow">
+              <p class="italic">"He showed great passion and problem-solving skills during our group project. A future great developer!"</p>
+              <p class="mt-4 font-semibold">— May Hnin, Classmate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="bg-white py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8">Latest Blog Posts</h2>
+          <div class="grid md:grid-cols-2 gap-6 text-left">
+            <div class="bg-gray-100 p-5 rounded-xl shadow">
+              <h4 class="text-xl font-semibold mb-2">Why I Started Learning React</h4>
+              <p class="text-sm text-[#444]">I chose React because it is powerful, in-demand, and helps build dynamic UIs. Here's how I began...</p>
+            </div>
+            <div class="bg-gray-100 p-5 rounded-xl shadow">
+              <h4 class="text-xl font-semibold mb-2">My Study Routine as a Developer</h4>
+              <p class="text-sm text-[#444]">Balancing JavaScript, PHP, and CS fundamentals isn’t easy — but here’s my daily approach.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Download -->
+      <section class="bg-[#000000] text-white py-16 px-4 text-center">
+        <div class="max-w-xl mx-auto">
+          <h2 class="text-2xl font-bold mb-6">Download My Resume</h2>
+          <p class="mb-6 text-sm">You can download my updated resume to learn more about my experience and skills.</p>
+          <a href="resume-waiyan.pdf" class="bg-[#6366F1] hover:bg-indigo-700 text-white py-2 px-6 rounded-full transition">Download Resume</a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-16 px-4 text-center">
+        <h3 class="text-2xl font-semibold mb-4">Let's Connect</h3>
+        <p class="mb-6">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+        <a href="mailto:waiyan@example.com" class="text-[#6366F1] font-bold underline">waiyan@example.com</a>
+      </section>
+
+      <!-- Footer -->
+    <!-- Footer -->
+       <!-- Footer -->
+       <footer class="relative bg-[#000000] text-white pt-20 pb-10 mt-16">
+        <!-- Wave SVG -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
+          <svg class="relative block w-full h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#F5F5F5" fill-opacity="1" d="M0,192L80,186.7C160,181,320,171,480,154.7C640,139,800,117,960,117.3C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+          </svg>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="max-w-6xl mx-auto px-4 relative z-10 text-center">
+          <div class="mb-6">
+            <h4 class="text-xl font-semibold mb-2">Wai Yan Portfolio</h4>
+            <p class="text-sm">Bringing ideas to life with code and creativity</p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-6 mb-6 text-sm">
+            <a href="#projects" class="hover:text-[#6366F1]">Projects</a>
+            <a href="#about" class="hover:text-[#6366F1]">About</a>
+            <a href="#skills" class="hover:text-[#6366F1]">Skills</a>
+            <a href="#testimonials" class="hover:text-[#6366F1]">Testimonials</a>
+            <a href="#blog" class="hover:text-[#6366F1]">Blog</a>
+            <a href="#contact" class="hover:text-[#6366F1]">Contact</a>
+          </div>
+          <div class="text-xs text-gray-400">
+            <p>© 2025 Wai Yan. All rights reserved.</p>
+            <p>Email: <a href="mailto:waiyan@example.com" class="underline hover:text-[#6366F1]">waiyan@example.com</a></p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+      toggleBtn.textContent = current === 'dark' ? '🌙' : '☀️';
+    });
+  </script>
+</body>
+</html> 
+

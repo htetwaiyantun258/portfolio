@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wai Yan Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    /* Custom Navbar Hover Effect */
+    nav a {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      background-color: #6366F1;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+    nav a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    
+  </style>
+</head>
+<body class="bg-[#F5F5F5] text-[#111111]" id="body">
+
+  <div class="container">
+    <div class="container-fluid">
+              <!-- Header -->
+      <header class="bg-[#000000] text-white p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+          <h1 class="text-xl font-bold">My Portfolio</h1>
+          <nav class="space-x-4">
+            <a href="design.html" class="hover:text-[#6366F1]">Projects</a>
+            <a href="about.html" class="hover:text-[#6366F1]">About</a>
+            <a href="#skills" class="hover:text-[#6366F1]">Skills</a>
+            <a href="#testimonials" class="hover:text-[#6366F1]">Testimonials</a>
+            <a href="blog.html" class="hover:text-[#6366F1]">Blog</a>
+            <a href="#contact" class="hover:text-[#6366F1]">Contact</a>
+            <!-- Dark Mode Toggle Button -->
+            <!-- <button id="theme-toggle" class="bg-white text-indigo-500 px-4 py-2 rounded">🌙</button> -->
+            
+          </nav>
+        </div>
+      </header>
+      <section id="blog" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Latest Blog Posts</h2>
+      
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+            <!-- Blog Post 1 -->
+            <div class="bg-gray-100 rounded-lg shadow overflow-hidden max-w-[500px] w-full mx-auto">
+                <img src="javascript.png" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-semibold text-gray-900 mb-2">Why Learn PHP in 2025?</h3>
+                  <p class="text-gray-700 mb-4">PHP is still alive! Here’s why you should consider learning it.</p>
+                  <a href="#" class="inline-block px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Read More</a>
+                </div>
+              </div>
+      
+            <!-- Blog Post 2 -->
+            <div class="bg-gray-100 rounded-lg shadow overflow-hidden max-w-[500px] w-full mx-auto">
+                <img src="php.png" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-semibold text-gray-900 mb-2">Why Learn PHP in 2025?</h3>
+                  <p class="text-gray-700 mb-4">PHP is still alive! Here’s why you should consider learning it.</p>
+                  <a href="#" class="inline-block px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Read More</a>
+                </div>
+              </div>
+      
+            <!-- Blog Post 3 -->
+            <div class="bg-gray-100 rounded-lg shadow overflow-hidden max-w-[500px] w-full mx-auto">
+                <img src="laravel.png" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-semibold text-gray-900 mb-2">Why Learn PHP in 2025?</h3>
+                  <p class="text-gray-700 mb-4">PHP is still alive! Here’s why you should consider learning it.</p>
+                  <a href="#" class="inline-block px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Read More</a>
+                </div>
+              </div>
+      
+            <!-- Blog Post 4 -->
+            <div class="bg-gray-100 rounded-lg shadow overflow-hidden max-w-[500px] w-full mx-auto">
+                <img src="flexbox.png" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                  <h3 class="text-2xl font-semibold text-gray-900 mb-2">Why Learn PHP in 2025?</h3>
+                  <p class="text-gray-700 mb-4">PHP is still alive! Here’s why you should consider learning it.</p>
+                  <a href="#" class="inline-block px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Read More</a>
+                </div>
+              </div>
+      
+            <!-- Continue blog posts up to 12 as needed... -->
+          </div>
+        </div>
+      </section>
+      <!-- **** -->
+
+     
+      
+      
+      
+          
+   
+
+
+       <!-- Footer -->
+       <footer class="relative bg-[#000000] text-white pt-20 pb-10 mt-16">
+        <!-- Wave SVG -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
+          <svg class="relative block w-full h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#F5F5F5" fill-opacity="1" d="M0,192L80,186.7C160,181,320,171,480,154.7C640,139,800,117,960,117.3C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+          </svg>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="max-w-6xl mx-auto px-4 relative z-10 text-center">
+          <div class="mb-6">
+            <h4 class="text-xl font-semibold mb-2">Wai Yan Portfolio</h4>
+            <p class="text-sm">Bringing ideas to life with code and creativity</p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-6 mb-6 text-sm">
+            <a href="#projects" class="hover:text-[#6366F1]">Projects</a>
+            <a href="#about" class="hover:text-[#6366F1]">About</a>
+            <a href="#skills" class="hover:text-[#6366F1]">Skills</a>
+            <a href="#testimonials" class="hover:text-[#6366F1]">Testimonials</a>
+            <a href="#blog" class="hover:text-[#6366F1]">Blog</a>
+            <a href="#contact" class="hover:text-[#6366F1]">Contact</a>
+          </div>
+          <div class="text-xs text-gray-400">
+            <p>© 2025 Wai Yan. All rights reserved.</p>
+            <p>Email: <a href="mailto:waiyan@example.com" class="underline hover:text-[#6366F1]">waiyan@example.com</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+      toggleBtn.textContent = current === 'dark' ? '🌙' : '☀️';
+    });
+  </script>
+</body>
+</html> 
+
